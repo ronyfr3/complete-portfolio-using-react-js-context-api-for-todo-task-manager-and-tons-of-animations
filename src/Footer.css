@@ -1,0 +1,67 @@
+.footer{
+    background-color: rgb(33, 51, 58);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+}
+.arrowUp{
+    width: 15px;
+    height: 15px;
+    font-size: 35px;
+    color: rgb(238, 43, 76);
+    margin: 0 auto;
+    cursor: pointer;
+    transform:translateY(-137%);
+}
+.arrowUp:hover{
+    color: rgb(235, 140, 15);
+    transform:translateY(-160%);
+    transition: all 0.2s ease;
+
+}
+.logo{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 55px;
+}
+.footerInfo{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.info{
+   font-size: 13px;
+   margin-left: 25px;
+   text-transform: uppercase;
+   font-family: 'Segoe UI',sans-serif;
+   color: gray;
+}
+.copywrite{
+    color: rgb(252, 249, 249);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.p{
+    color: rgb(231, 216, 216);
+    font-size: 13px;
+}
+.logos{
+    margin-left: 35px;
+    cursor: pointer;
+    color: rgb(253, 252, 252);
+    background-color: rgb(33, 51, 58);
+    width: 50px;
+    border: none;
+    outline: none;
+}
+.logos:hover{
+    color: rgb(21, 245, 245);
+    box-shadow: 0 0 15px rgb(21, 224, 224);
+    transition: all 0.2s ease-in;
+    border-radius: 10%;
+}

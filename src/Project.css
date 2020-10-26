@@ -1,0 +1,34 @@
+.projectBorder{
+    border-bottom: 2px solid rgb(54, 53, 53);
+    width: 80px;
+}
+.nameinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listProducts{
+    border: 1px solid rgb(209, 208, 208);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 34.33%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgb(33, 51, 58)
+    
+}
+.productBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}

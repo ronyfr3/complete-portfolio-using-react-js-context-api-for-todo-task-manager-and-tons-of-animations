@@ -1,0 +1,59 @@
+.todo{
+    background-color: rgb(33, 51, 58);
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+@media screen and (max-width: 500px){
+    .todo{
+        width: 380px;
+        height: 100%;
+        margin: 0 auto; 
+    }
+}
+.todo-h2{
+    color: white;
+    padding-top: 10px;
+}
+input{
+    border-radius: 10%;
+    border: none;
+    padding: 8px;
+    width: 200px;
+}
+.tasks{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.taskBtn{
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    color: white;
+    background-color: brown;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+
+}
+.noTask{
+    background-color: rgb(185, 31, 3);
+    font-size: 20px;
+    color: rgb(242, 246, 248);
+    width: 150px;
+    box-shadow: 0 0 15px rgb(77, 196, 243);
+}
+.tasklistss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

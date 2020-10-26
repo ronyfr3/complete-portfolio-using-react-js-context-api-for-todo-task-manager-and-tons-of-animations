@@ -1,0 +1,7 @@
+body{
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+.bachelor{
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: transparent;
+    background-image: url(https://th.bing.com/th/id/OIP.DYyjVIOheUghQhBMscnqbgHaEK?w=323&h=180&c=7&o=5&pid=1.7);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: left 0 top 10px;
+    }
+    40%{
+        background-position: left 800px top 10px;
+    }
+}
+.hello{
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+.iam{
+   color: rgb(235, 19, 55);
+}
+.TyperText{
+    color:rgb(248, 168, 18);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+strong{
+    color: rgb(252, 249, 250);
+    font-weight: 400;
+    
+}
+.colorWrapper{
+    line-height: 45px;
+}
