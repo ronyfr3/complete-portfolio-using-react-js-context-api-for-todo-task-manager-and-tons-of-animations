@@ -5,12 +5,21 @@ export const TaskListContext = createContext()
 function Context(props) {
 
     //localStorage
+    //getitem(task )task ta holo setitem(task) name same hte hbe
+    //empty object || [] mane jodi kono array na thake tasks e taile amk empty object firot dibe 
+    //initialstate e store korci j data passi setItem theke as object
+    //amra jkono name dite pari jmn ekhne 'tasks' name dyeci but setIte r getItem er name same hte hbe
+    //JSON.parse object create kore array k thn directly use korte object ta k application e
     const initialstate = JSON.parse(localStorage.getItem('tasks')) || []
     
     //ey line age lekha jbe na coz initialstate age define na korle error dekhabe
+    //useState(initialstate) ekhne initialstate ki korce jodi tasks e array object thake taile firot dibe oi array obj noito empty object firot dibe
     const [tasks,setTasks] = useState(initialstate)
     //tasks age define kore thn use korte hoi
+    //useEffect er kaj holo new array add krar por akbar run hbe
     useEffect(()=>{
+        //JSON.stringify(tasks) ekhne tasks ta holo useState er tasks variable jetake json string e convert korci
+        //setItem('tasks') ekhne tasks holo name eta jkono name dite pari
         localStorage.setItem('tasks',JSON.stringify(tasks))
     },[tasks])
 
@@ -66,16 +75,28 @@ function Context(props) {
         setTasks(newTasks)
         setEditItem(null)
     }
+    // userForms
+    const initValue =JSON.parse(localStorage.getItem('user')) || []
+    const [user ,setUser] =useState(initValue)
+    useEffect(()=>{
+         localStorage.setItem('user',JSON.stringify(user))
+    },[user])
+    const addUser = (title) => {
+        setUser(title)
+    }
 
     return (
     <TaskListContext.Provider value={{
         tasks,
+        user,
+        addUser,
+        setUser,
+        setTasks,
         editItem,
         findItem,
         editTask,
         clearTask,
         deleteTask,
-        setTasks,
         addTask
         }}>
         {props.children}
